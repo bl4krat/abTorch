@@ -45,10 +45,11 @@ static void blink_led (void)
 static void configure_led (void)
 {
     ESP_LOGI(TAG, "Example configured to blink GPIO LED!");     // Log the fact that we have configured the pin
-                                                                // ...before we have configured the pin
-    gpio_reset_pin(BLINK_GPIO);                                 // reset the pin to a known configuration
-    gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);           // Set the pin as a push/pull output
-    printf("Configuration is now complete\n");
+                                                                // ...before we have configured the pin.
+    gpio_reset_pin(BLINK_GPIO);                                 // reset the pin to a known configuration.
+    gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);           // Set the pin as a push/pull output.
+    printf("Configuration is now complete\n");                  //  output to the serial port. Note the difference between 
+                                                                // (formatted) log messages and the output from printf().
 }
 
 
