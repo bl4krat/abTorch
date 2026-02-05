@@ -4,6 +4,8 @@
 * .gitignore to hide build files (and potentially) secrets
 * 1st draft board.h to map board pins to ESPIDF references. DONE
 * example app using board.h. DONE
+* read protocol from test switch. DONE
+* Map out the sections of the protocol. DONE (pen and paper - not uploaded)
 * review ESP RMT.
 * get LED modulating at 38kHz.
 * pulse the moulated LED. 
